@@ -1,0 +1,136 @@
+:root {
+    --main: #2a4983;
+    --point: #d3ba9e;
+    --cb: #000;
+    --c2: #222;
+    --c3: #333;
+    --c4: #444;
+    --c6: #666;
+    --c9: #999;
+    --cl: #d1d2d3;
+    --cbb: #f0f1f2;
+    --cwb: #f8f9fa;
+    --cw: #fff;
+}
+
+.inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+/* -------------------------- */
+
+.header {
+    background: var(--c2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: var(--c3);
+
+}
+
+.header .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
+}
+
+.header .inner img {
+    height: 80px;
+}
+
+.gnb {
+    background: var(--c2)
+}
+
+.gnb .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 48px;
+}
+
+.gnb .lnk {
+    display: flex;
+}
+
+.gnb .lnk>li {
+    border-left: 1px solid var(--c6);
+
+}
+
+.gnb .lnk>li>a {
+    display: block;
+    padding: 0 16px;
+    color: #ddd;
+    font-size: 14px;
+
+}
+
+.gnb .utils {
+    display: flex;
+    align-items: center;
+}
+
+.gnb .utils>a {
+    display: block;
+    padding: 0 16px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.gnb .lang select {
+    background: none;
+    border: none;
+    border-right: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+
+.main_visual_slide .itm {
+    position: relative;
+    height: calc(100vh - 170px);
+}
+
+.main_visual_slide .itm::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+.main_visual_slide .itm .box {
+    position: absolute;
+    inset: 40px 40px 40px 40px;
+    border-radius: 16px;
+}
+
+.main_visual_slide .itm01 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual_slide .itm02 {
+    background: url(../images/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.main_visual_slide .itm03 {
+    background: url(../images/mainvisual03.jpg)no-repeat center center/cover;
+}
+
+
+.main_visual_slide .itm01 .box {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual_slide .itm02 .box {
+    background: url(../images/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.main_visual_slide .itm03 .box {
+    background: url(../images/mainvisual03.jpg)no-repeat center center/cover;
+}
